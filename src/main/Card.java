@@ -4,13 +4,13 @@ public class Card {
 	private String mark;
 	private int number;
 
-	public Card(String string, int i) {
+	public Card(String mark, int number) {
 		this.mark = mark;
 		this.number = number;
 	}
 
 	public String getMark() {
-		String[] name = { "スペード", "ハート", "クラブ", "ダイヤ" };
+		//String[] name = { "スペード", "ハート", "クラブ", "ダイヤ" };
 		return mark;
 	}
 

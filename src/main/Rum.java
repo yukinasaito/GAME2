@@ -1,6 +1,6 @@
 package main;
 
-public class rum {
+public class Rum {
 
 	private static final Card Number = null;
 	private static final String Syatem = null;
@@ -11,11 +11,12 @@ public class rum {
 		System.out.println(card.getMark());
 		System.out.println(card.getNumber());
 
-		deck deck = new deck();
-		main.deck.shuffle();
+		Deck deck = new Deck();
+		//deck.shuffle();
 
 		Card card2 = deck.draw();
-		System.out.println(card2.getNumber());
-		System.out.println(card.getMark());
+		System.out.println(card2.getMark());
+		System.out.println(card.getNumber());
+
 	}
 }
