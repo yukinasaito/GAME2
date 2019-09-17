@@ -29,7 +29,7 @@ public class Deck {
 
 			int jorkars = 2;
 			for(int number = 1; number <= jorkars; number++) {
-				marks.add(new Card("ジョカー", 14));
+				marks.add(new Card("ジョーカー", 14));
 			}
 		}
 		return marks;
@@ -54,6 +54,6 @@ public class Deck {
 	}
 
 	public void put(Card card) {
-
+		cards.add(card);
 	}
 }
