@@ -1,9 +1,9 @@
 package main;
+
 public class Card {
 
 	private String mark;
 	private int number;
-	private boolean card;
 
 	public Card(String mark, int number) {
 		this.mark = mark;
@@ -41,13 +41,69 @@ public class Card {
 		return str;
 	}
 
-	int compareTo(Card anotherCard) {
+	public int compareTo(Card anotherCard) {
 		if(this.number < anotherCard.number) {
-			return 1;
-		}
-		if(this.number > anotherCard.number) {
 			return -1;
+		} else if(this.number > anotherCard.number) {
+			return +1;
+		} else if(this.number == anotherCard.number) {
+			return 0;
 		}
-		return 0;
+		return number;
+
 	}
+
+	public int compareTo2(Card anotherCard) {
+		if(this.mark == "スペード") {
+			if(anotherCard.mark == "スペード") {
+				return 0;
+			} else if(anotherCard.mark == "ハート") {
+				return -1;
+			} else if(anotherCard.mark == "ダイヤ") {
+				return -1;
+			} else if(anotherCard.mark == "クラブ") {
+				return -1;
+			}
+			if(this.mark == "ハート") {
+				if(anotherCard.mark == "スペード") {
+					return +1;
+				} else if(anotherCard.mark == "ハート") {
+					return 0;
+				} else if(anotherCard.mark == "ダイヤ") {
+					return -1;
+				} else if(anotherCard.mark == "クラブ") {
+					return -1;
+				}
+				if(this.mark == "ダイヤ") {
+					if(anotherCard.mark == "スペード") {
+						return +1;
+					} else if(anotherCard.mark == "ハート") {
+						return +1;
+					} else if(anotherCard.mark == "ダイヤ") {
+						return 0;
+					} else if(anotherCard.mark == "クラブ") {
+						return -1;
+					}
+					if(this.mark == "クラブ") {
+						if(anotherCard.mark == "スペード") {
+							return +1;
+						} else if(anotherCard.mark == "ハート") {
+							return +1;
+						} else if(anotherCard.mark == "ダイヤ") {
+							return +1;
+						} else if(anotherCard.mark == "クラブ") {
+							return 0;
+						}
+					}
+				}
+			}
+		}
+		int maek = 0;
+		return maek;
+	}
+
+	public int compareTo3(Card anotherCard) {
+
+	}
+
 }

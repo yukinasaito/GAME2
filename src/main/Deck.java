@@ -56,4 +56,5 @@ public class Deck {
 	public void put(Card card) {
 		cards.add(card);
 	}
+
 }
