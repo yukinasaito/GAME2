@@ -64,46 +64,42 @@ public class Card {
 			} else if(anotherCard.mark == "クラブ") {
 				return -1;
 			}
-			if(this.mark == "ハート") {
-				if(anotherCard.mark == "スペード") {
-					return +1;
-				} else if(anotherCard.mark == "ハート") {
-					return 0;
-				} else if(anotherCard.mark == "ダイヤ") {
-					return -1;
-				} else if(anotherCard.mark == "クラブ") {
-					return -1;
-				}
-				if(this.mark == "ダイヤ") {
-					if(anotherCard.mark == "スペード") {
-						return +1;
-					} else if(anotherCard.mark == "ハート") {
-						return +1;
-					} else if(anotherCard.mark == "ダイヤ") {
-						return 0;
-					} else if(anotherCard.mark == "クラブ") {
-						return -1;
-					}
-					if(this.mark == "クラブ") {
-						if(anotherCard.mark == "スペード") {
-							return +1;
-						} else if(anotherCard.mark == "ハート") {
-							return +1;
-						} else if(anotherCard.mark == "ダイヤ") {
-							return +1;
-						} else if(anotherCard.mark == "クラブ") {
-							return 0;
-						}
-					}
-				}
+		} else if(this.mark == "ハート") {
+			if(anotherCard.mark == "スペード") {
+				return +1;
+			} else if(anotherCard.mark == "ハート") {
+				return 0;
+			} else if(anotherCard.mark == "ダイヤ") {
+				return -1;
+			} else if(anotherCard.mark == "クラブ") {
+				return -1;
+			}
+		} else if(this.mark == "ダイヤ") {
+			if(anotherCard.mark == "スペード") {
+				return +1;
+			} else if(anotherCard.mark == "ハート") {
+				return +1;
+			} else if(anotherCard.mark == "ダイヤ") {
+				return 0;
+			} else if(anotherCard.mark == "クラブ") {
+				return -1;
+			}
+		} else if(this.mark == "クラブ") {
+			if(anotherCard.mark == "スペード") {
+				return +1;
+			} else if(anotherCard.mark == "ハート") {
+				return +1;
+			} else if(anotherCard.mark == "ダイヤ") {
+				return +1;
+			} else if(anotherCard.mark == "クラブ") {
+				return 0;
 			}
 		}
-		int maek = 0;
-		return maek;
+		return 0;
 	}
 
 	public int compareTo3(Card anotherCard) {
-
+		return 0;
 	}
 
 }
