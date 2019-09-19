@@ -38,5 +38,13 @@ public class Run4 {
 		} else {
 			System.out.println("同じ");
 		}
+		int compare4 = card.compareTo3(card2);
+		if(compare4 < 0) {
+			System.out.println("強い");
+		} else if(compare4 > 0) {
+			System.out.println("弱い");
+		} else {
+			System.out.println("同じ");
+		}
 	}
 }
